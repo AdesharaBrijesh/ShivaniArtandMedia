@@ -401,17 +401,7 @@ body {
   overflow: hidden;
 }
 
-.project-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--black);
-  opacity: 0.5;
-  transition: var(--transition-2);
-}
+
 
 .project-card:is(:hover, :focus-within)::after { opacity: 0.8; }
 
@@ -422,6 +412,19 @@ body {
   right: 0;
   padding: 20px;
   z-index: 1;
+  transition: var(--transition-2);
+}
+
+
+.project-card2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  border: 1px solid black;
   transition: var(--transition-2);
 }
 
